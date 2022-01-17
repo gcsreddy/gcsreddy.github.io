@@ -3,76 +3,434 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>GCSReddy</title>
+    <meta name="description" content="Portfolio of Chandra Shekar Reddy Gadipally - Staff Architect & Data Engineer specialized in stream processing, data operations, big data processing, and microservices.">
+    <meta name="author" content="Chandra Shekar Reddy Gadipally">
+    <title>Chandra Shekar Reddy Gadipally | Staff Architect & Data Engineer</title>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <h2>Gadipally Chandra Shekar Reddy</h2>
+    
+    <!-- Navigation -->
+    <header>
+      <div class="container nav-container">
+        <a href="#" class="logo">CS REDDY</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education & Certs</a></li>
+        </ul>
       </div>
-      <div class="row">
-        <a href="mailto:gcsr13@gmail.com">
-          <button class="fa fa-google"> mail</button></a>
-        <a href="https://stackoverflow.com/users/6024518/c-s-reddy-gadipally">
-          <button class="fa fa-stack-overflow"></button></a>
-        <a href="https://www.linkedin.com/in/gcsreddy/">
-          <button class="fa fa-linkedin"></button></a>
-        <a href="https://github.com/gcsreddy">
-          <button class="fa fa-github"></button></a>
-        <a href="resume/CSReddyG.pdf" target="_blank">
-          <button class="fa fa-file-pdf-o"> resume</button></a>
-        <a href="https://projecteuler.net/profile/gcsreddy.png">
-          <img src="https://projecteuler.net/profile/gcsreddy.png"></a>
-        <a>
-          
-        </a>
-      </div>
-      <div class="row"><!-- header div-->
-        <header class="sticky">
-          <a href="index.html"><h3>Home</h3></a>
-        </header>
-      </div>
-      <!-- content div -->
-      <div class="row">
-        <div class="col-lg-8">
-          <p>Welcome to my website.</p>
-          <p>I completed my undergraduate studies in Hyderabad, India where I recieved
-            Bachelors in Electronics and Computer Engineering from JNT University in 2008.
-            I recieved Masters in Computer Science in 2010 from Illinois Institute of Technology in Chicago.</p>
-          <p>My current interests are
-            <ul>
-              <li>Functional programming, especially Haskell</li>
-              <li>Category theory</li>
-              <li>Data science and engineering using Apache Spark</li>
-              <li>Scala 
-                <div>Certified Lightbend Scala Language Professional - Level 2 Issued by Lightbend, Inc. <a href="https://www.youracclaim.com/badges/40109a93-5f0a-4131-a040-02f04a396fe2/public_url">badge</a> and <a href="https://academy.lightbend.com/certificates/9a671d6b59754cd3b1efdff3a7b0ae4f">certificate</a></div>
-              </li>
-            </ul>
-          </p>
-          <p>other experience include
-            <ul>
-              <li>Java applications</li>
-              <li>SQL, NoSQL</li>
-              <li>Javascript, Elm</li>
-              <li>R see coursera <a href="https://www.coursera.org/account/accomplishments/certificate/V6FLUXN73YZF">certificate</a></li>
-            </ul>
-          </p>
-          <p>During my free time, I paraglide,
-            watch birds soar in thermal updrafts,
-            read, hike, play tennis and tinker with arduino.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content-wrapper" style="display: flex; gap: 3rem; align-items: center; justify-content: space-between; flex-wrap: wrap-reverse;">
+          <div class="hero-text" style="flex: 1; min-width: 280px;">
+            <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; margin-bottom: 1.5rem;">
+              <span class="hero-tag" style="margin-bottom: 0;">Staff Architect &amp; Data Engineer</span>
+              <span class="hero-tag" style="margin-bottom: 0; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.25); color: var(--accent-secondary);"><i class="fa-solid fa-location-dot"></i> Greater Boston</span>
+            </div>
+            <h1>Hi, I'm <span>Chandra Shekar Reddy</span></h1>
+            <p class="hero-subtitle">
+              Over 16 years of experience building high-performance stream processing pipelines, big data infrastructure, and microservices using Scala, Python, Rust, Spark, Flink, Dataflow/Beam, GCP, AWS, Java.
+            </p>
+            <div class="social-links">
+              <a href="mailto:gcsr13@gmail.com" class="btn btn-primary" id="email-link">
+                <i class="fa-solid fa-envelope"></i> Email Me
+              </a>
+              <a href="https://github.com/gcsreddy" target="_blank" class="btn btn-secondary" id="github-link" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/gcsreddy/" target="_blank" class="btn btn-secondary" id="linkedin-link" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://stackoverflow.com/users/6024518/c-s-reddy-gadipally" target="_blank" class="btn btn-secondary" id="stackoverflow-link" aria-label="Stack Overflow Profile">
+                <i class="fa-brands fa-stack-overflow"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image-container" style="flex-shrink: 0; display: flex; justify-content: center; align-items: center; width: 280px; height: 280px; border-radius: 50%; padding: 8px; background: var(--grad-primary); box-shadow: var(--shadow-lg); transition: var(--transition-smooth); margin: 0 auto;">
+            <img src="https://avatars.githubusercontent.com/u/1406218?v=4" alt="Chandra Shekar Reddy Gadipally" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 4px solid var(--bg-primary);">
+          </div>
         </div>
       </div>
-      <div class="row"><!-- footer div-->
-        <footer class="sticky">
-          <p>The source of the website is available at 
-            <a href="https://github.com/gcsreddy/gcsreddy.github.io">
-              <i class="fa fa-github"></i>
-            </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div style="max-width: 800px; font-size: 1.1rem; color: var(--text-secondary);">
+          <p style="margin-bottom: 1.5rem;">
+            I am a senior engineer specialized in stream processing, data operations, and big data architecture. My expertise covers the full lifecycle of data-intensive systems, from designing real-time analytics pipelines to architecting resilient microservices.
           </p>
-        </footer>
+          <p style="margin-bottom: 1.5rem;">
+            My technical focus centers on Scala, Python, and Rust, functional programming, stream engines (Beam/Dataflow, Flink, Spark Streaming), cloud infrastructure (AWS & Google Cloud), and robust devops practices (Docker, Kubernetes, Terraform).
+          </p>
+          <p>
+            During my free time, I paraglide, watch birds soar in thermal updrafts, read, hike, play tennis, and tinker with Arduino.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="skills-grid">
+          
+          <div class="card skills-card">
+            <h3><i class="fa-solid fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+              <span class="tag">Scala (7+ years)</span>
+              <span class="tag">Python</span>
+              <span class="tag">Rust</span>
+              <span class="tag">Haskell</span>
+              <span class="tag">Java (7+ years)</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Elm</span>
+              <span class="tag">Javascript / TypeScript</span>
+              <span class="tag">R</span>
+            </div>
+          </div>
+
+          <div class="card skills-card">
+            <h3><i class="fa-solid fa-database"></i> Data & ML</h3>
+            <div class="skill-tags">
+              <span class="tag">Apache Flink</span>
+              <span class="tag">Apache Spark</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">AWS Kinesis</span>
+              <span class="tag">Databricks</span>
+              <span class="tag">Hadoop</span>
+              <span class="tag">Snowflake</span>
+              <span class="tag">ElasticSearch</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Pandas / Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="card skills-card">
+            <h3><i class="fa-solid fa-cloud"></i> Web, Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span class="tag">Play Framework</span>
+              <span class="tag">Http4s / Cats</span>
+              <span class="tag">Sbt</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">GitHub Actions / Jenkins</span>
+              <span class="tag">Neovim / Tmux</span>
+              <span class="tag">Gemini CLI / Antigravity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+
+          <!-- Jack Henry & Associates -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Staff Architect, Data Engineering</h3>
+                  <div class="timeline-company">Jack Henry &amp; Associates</div>
+                </div>
+                <div class="timeline-date">Sep 2024 - Present</div>
+              </div>
+              <ul class="timeline-list">
+                <li><strong>Hands-on Architecture:</strong> Actively designing, writing, and deploying production-grade code for batch and real-time streaming data pipelines.</li>
+                <li>Streaming real-time CDC (Change Data Capture) events from credit union backend databases into Google Cloud Platform (GCP) using Debezium.</li>
+                <li>Leveraging Google Cloud services including Cloud Dataflow, Cloud Pub/Sub, BigQuery, and Cloud Storage (GCS) for high-throughput batch and stream processing.</li>
+                <li>Orchestrating data workflows using Google Managed Airflow (Cloud Composer), defining infrastructure with Terraform, containerizing services with Docker, and automating with GitHub Actions.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">GCP (Dataflow, Pub/Sub, BigQuery, GCS, Cloud Composer)</span>
+                <span class="tech-tag">Debezium</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">Gemini CLI / Antigravity</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Rust</span>
+                <span class="tech-tag">Stream Processing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disney -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Contract Software Engineer (Scala)</h3>
+                  <div class="timeline-company">Disney (Streaming)</div>
+                </div>
+                <div class="timeline-date">Jun 2023 - Mar 2024</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Enhanced Disney’s adaptive traffic routing application (Panama), distributing HULU, Disney+, ESPN, and STAR+ user traffic to Disney & third-party CDNs to optimize cost and performance.</li>
+                <li>Designed advanced targeting features for routing users via Private Network Interfaces (PNI) using partner ASNs.</li>
+                <li>Aggregated real-time telemetry and usage data using Apache Flink, AWS Kinesis, Lambda, and Timestream.</li>
+                <li>Optimized user playback session summarization and anonymization pipelines using Apache Spark, Databricks, Delta Lake, and S3.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Cats</span>
+                <span class="tech-tag">Http4s</span>
+                <span class="tech-tag">Doobie</span>
+                <span class="tech-tag">Flink</span>
+                <span class="tech-tag">AWS Kinesis</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Databricks</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">Timestream</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stash Invest -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Data Engineer IV</h3>
+                  <div class="timeline-company">Stash Invest</div>
+                </div>
+                <div class="timeline-date">Jun 2022 - Jun 2023</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Created and maintained robust ETL pipelines ingesting fintech data from Zendesk, Alloy, Apex, Stride bank, Mixpanel, and third-party APIs.</li>
+                <li>Implemented customer audio transcription, anonymization, and summarization using OpenAI Whisper, Pyannote, and Microsoft Presidio.</li>
+                <li>Built interactive Crypto advice dashboards for risk management teams in Looker.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Airflow</span>
+                <span class="tech-tag">OpenAI Whisper</span>
+                <span class="tech-tag">Redshift</span>
+                <span class="tech-tag">Looker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Datasembly -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Senior Software Engineer (Data Operations)</h3>
+                  <div class="timeline-company">Datasembly</div>
+                </div>
+                <div class="timeline-date">Jul 2021 - Jun 2022</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Streamlined retail product data collection and built new ETL pipelines using Spark, Kafka, and Airflow (Astronomer).</li>
+                <li>Developed computer vision and OCR solutions to extract nutrition facts and ingredients from product label images.</li>
+                <li>Refactored handling of 2-prefix UPC (GTIN12) barcodes across the core platform.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tesseract</span>
+                <span class="tech-tag">Airflow</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">GCP</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Snowflake</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Verizon -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Contractor - NLP & Data Engineer</h3>
+                  <div class="timeline-company">Verizon</div>
+                </div>
+                <div class="timeline-date">Aug 2020 - Jul 2021</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Enhanced and optimized Verizon FiosTV voice-search Natural Language Understanding (NLU) service.</li>
+                <li>Re-architected and built the next-generation NLU models using the RASA framework, validating performance using Spark.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Play Framework</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">RASA</span>
+                <span class="tech-tag">ElasticSearch</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Spark</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edward Jones -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Contractor - Sr Software & Data Engineer</h3>
+                  <div class="timeline-company">Edward Jones Investments</div>
+                </div>
+                <div class="timeline-date">Mar 2012 - Aug 2019</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Designed Spark-Scala batch analytics pipelines detecting account trends, conversions, commission reductions, and asset flows.</li>
+                <li>Calculated Z-Scores on aggregated financial events, cross-referencing with rule engines for compliance reporting.</li>
+                <li>Built a web application for calculating Required Minimum Distributions (RMD) and compiling advisory dashboards.</li>
+                <li>Consolidated fee-structure processing and dividend reinvestment platforms into unified modern web tools.</li>
+              </ul>
+              <div class="tech-stack-label">Tech Stack:</div>
+              <div class="tech-stack-tags">
+                <span class="tech-tag">Scala</span>
+                <span class="tech-tag">Spark</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring</span>
+                <span class="tech-tag">Oracle DB</span>
+                <span class="tech-tag">Highcharts</span>
+                <span class="tech-tag">Hibernate</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Credentials Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education & Credentials</h2>
+        
+        <h3 style="margin-bottom: 1.5rem; color: var(--accent-secondary);"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="card-grid" style="margin-bottom: 3rem;">
+          <div class="card">
+            <h3>M.S. in Computer Science</h3>
+            <p style="color: var(--accent-primary); font-weight: 600; margin-bottom: 0.5rem;">Illinois Institute of Technology</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Chicago, IL | 2009 - 2010</p>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">Focus: Algorithms, Science of Programming, Advanced Database Systems</p>
+          </div>
+          <div class="card">
+            <h3>B.Tech. in Electronics & Computer Engineering</h3>
+            <p style="color: var(--accent-primary); font-weight: 600; margin-bottom: 0.5rem;">Jawaharlal Nehru Technological University</p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">Hyderabad, India | 2004 - 2008</p>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: 1.5rem; color: var(--accent-secondary);"><i class="fa-solid fa-certificate"></i> Professional Certifications</h3>
+        <div class="certs-grid">
+          
+          <!-- Lightbend Academy -->
+          <div class="cert-card" style="flex-direction: column; align-items: stretch; gap: 0.5rem;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;">
+              <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="cert-info">
+                <h4 style="font-size: 1.15rem;">Lightbend Academy</h4>
+                <p>Scala, Akka &amp; Reactive Systems</p>
+              </div>
+            </div>
+            <ul class="timeline-list" style="margin-left: 0.5rem; font-size: 0.9rem;">
+              <li><a href="https://www.youracclaim.com/badges/40109a93-5f0a-4131-a040-02f04a396fe2/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Scala Professional (Level 2) <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/3cfbbbdd-7193-494d-aff0-e75ec8ef3232?source=linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Akka for Scala Professional <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/4244c7b9-72ce-4b5b-9972-096a3b2edfa6/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Intro to Reactive Systems <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/415b66c6-8caa-49d6-a77f-ae30c8248229/linked_i" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Reactive Microservices <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/2a36f30f-9747-44a0-9b5a-5abc7f292059/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Domain Driven Design <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/27908877-0295-42e8-91e4-c4abc9bfba4a/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Distributed Messaging Patterns <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/4a9eeb89-982c-46c7-b237-d5d776b3b7b1/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">CQRS and Event Sourcing <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.youracclaim.com/badges/c136bad1-0008-4d27-b094-bf67442325e9/linked_in_profile" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Building Scalable Systems <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Astronomer -->
+          <div class="cert-card" style="flex-direction: column; align-items: stretch; gap: 0.5rem;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;">
+              <div class="cert-icon"><i class="fa-solid fa-wind"></i></div>
+              <div class="cert-info">
+                <h4 style="font-size: 1.15rem;">Astronomer</h4>
+                <p>Apache Airflow Orchestration</p>
+              </div>
+            </div>
+            <ul class="timeline-list" style="margin-left: 0.5rem; font-size: 0.9rem;">
+              <li><a href="https://www.credly.com/badges/9b59cea6-7dfe-48b2-98ed-f324a2d519fa/public_url" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Apache Airflow DAG Authoring <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- Coursera -->
+          <div class="cert-card" style="flex-direction: column; align-items: stretch; gap: 0.5rem;">
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 0.5rem;">
+              <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="cert-info">
+                <h4 style="font-size: 1.15rem;">Coursera</h4>
+                <p>Data Science, ML &amp; Programming</p>
+              </div>
+            </div>
+            <ul class="timeline-list" style="margin-left: 0.5rem; font-size: 0.9rem;">
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/X26L6CXAAQW2" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Functional Programming in Scala <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/YE4675QV9ABV" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Functional Program Design in Scala <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/SUWDX96WZPXZ" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">MML: Linear Algebra <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/TPND52MA98DL" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">MML: Multivariate Calculus <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://coursera.org/share/1be58788da00a0af47586fb2f4fd41d6" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">MML: Principal Component Analysis <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://coursera.org/share/1be58788da00a0af47586fb2f4fd41d6" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Intro to Data Science in Python <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/3LZ88634CQ74" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Applied Machine Learning in Python <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/SAA9NLAQ7B8Y" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Applied Text Mining in Python <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/V6FLUXN73YZF" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">R Programming <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/CGQXHLR4NQSE" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Python Basics <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/certificate/Q6XA5EMTMAXC" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">AWS Fundamentals <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://coursera.org/share/19876267b07881c08df38d173acc1425" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Google Cloud Fundamentals <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/NTGJDNXR4D58" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">DataOps Methodology <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/ULR55RB2E2UA" target="_blank" style="color: var(--text-primary); text-decoration: none; display: flex; align-items: center; gap: 0.25rem;">Learning How to Learn <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2026 Chandra Shekar Reddy Gadipally. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted);">
+          Source code available on <a href="https://github.com/gcsreddy/gcsreddy.github.io" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>.
+        </p>
+      </div>
+    </footer>
+
   </body>
 </html>
